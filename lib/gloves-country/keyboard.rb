@@ -17,8 +17,8 @@
 #++
 
 require "rubygems"
-require 'config_agent/keyboard'
-require 'config_agent/setxkbmap'
+require 'config_agent/country/keyboard'
+require 'config_agent/country/setxkbmap'
 
 # module for keyboard configuration
 module Gloves

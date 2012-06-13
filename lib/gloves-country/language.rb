@@ -19,7 +19,7 @@
 $LOAD_PATH << File.dirname(__FILE__)
 
 require "rubygems"
-require 'config_agent/language'
+require 'config_agent/country/language'
 
 # module for language configuration
 module Gloves
