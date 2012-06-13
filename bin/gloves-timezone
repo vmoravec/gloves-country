@@ -19,7 +19,7 @@ command :list do |c|
 
   c.action do |global_options,options,args|
 
-    timezone = Glove::Timezone
+    timezone = Gloves::Country::Timezone
     params              = {}
     params["kind"]      = "timezones" if options[:timezones]
     if options[:regions]
@@ -35,7 +35,7 @@ desc 'Show the default time zone for given language'
 command :language do |c|
 
   c.action do |global_options,options,args|
-    language = Glove::Timezone.read "kind" => "language", "language" => args[0]
+    language = Gloves::Country::Timezone.read "kind" => "language", "language" => args[0]
     puts language["timezone"]
   end
 end
@@ -43,7 +43,7 @@ end
 desc 'Time zone configuration summary'
 command :summary do |c|
   c.action do |global_options,options,args|
-    timezone = Glove::Timezone::read({})
+    timezone = Gloves::Country::Timezone::read({})
     puts "Default Timezone: #{timezone['default_timezone']}" if timezone['default_timezone']
     puts "Current Timezone: #{timezone['timezone']}"
     puts "Hardware Clock: #{timezone['hwclock']}"
@@ -68,7 +68,7 @@ command :set do |c|
       params["hwclock"]   = hwclock unless hwclock.nil?
     end
     params["apply"]     = true unless params.empty?
-    Glove::Timezone::modify({}, params)
+    Gloves::Country::Timezone::modify({}, params)
   end
 end
 

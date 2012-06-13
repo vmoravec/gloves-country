@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'gli'
-require 'gloves-country/keyboard'
+require 'gloves/country/keyboard'
 
 include GLI::App
 

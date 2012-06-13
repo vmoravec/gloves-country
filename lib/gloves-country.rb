@@ -1,7 +1,5 @@
-require "gloves-country/version"
+require "gloves/country/version"
 
 module Gloves
-  module Country
-    # Your code goes here...
-  end
+  module Country ; end
 end
