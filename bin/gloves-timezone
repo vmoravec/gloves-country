@@ -1,11 +1,14 @@
 #!/usr/bin/env ruby
 #
 require 'gli'
-require 'gloves-country/timezone'
+require 'gloves/country/timezone'
+require 'gloves/country/version'
 
 include GLI::App
 
 program_desc 'Command line user interface for Timezone Glove'
+
+version Gloves::Country::VERSION
 
 desc 'List available time zones'
 command :list do |c|

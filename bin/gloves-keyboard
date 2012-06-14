@@ -2,6 +2,7 @@
 
 require 'gli'
 require 'gloves/country/keyboard'
+require 'gloves/country/version'
 
 include GLI::App
 
