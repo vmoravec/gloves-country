@@ -12,7 +12,7 @@ version Gloves::Country::VERSION
 
 desc "Keyboard configuration"
 
-command bin_file do |c|
+command :list do |c|
   c.action do
     puts 'Do something keyboard related'
   end
