@@ -13,7 +13,7 @@ command :list do |c|
 
   c.action do |global_options,options,args|
 
-    languages           = Gloves::Country::Language::read "kind" => "languages"
+    languages           = Gloves::Language::read "kind" => "languages"
     puts languages["languages"].inspect
   end
 end
@@ -21,7 +21,7 @@ end
 desc 'Language configuration summary'
 command :summary do |c|
   c.action do |global_options,options,args|
-    language = Gloves::Country::Language::read({})
+    language = Gloves::Language::read({})
     puts "Current Language: #{language['language']}"
     puts "Installed Languages: #{language['languages']}" if language['languages']
   end
