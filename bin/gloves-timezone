@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 #
 require 'gli'
-require 'gloves/country/timezone'
+require 'gloves/timezone'
 require 'gloves/country/version'
 
 include GLI::App
