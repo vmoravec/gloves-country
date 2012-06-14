@@ -9,8 +9,6 @@ Gem::Specification.new do |gem|
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
-  gem.bindir        = 'bin'
-  gem.executables   = ['gloves-timezone', 'gloves-keyboard', 'gloves-language']
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "gloves-country"
   gem.require_paths = ["lib"]

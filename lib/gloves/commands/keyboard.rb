@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 require 'gli'
 require 'gloves/keyboard'
 require 'gloves/country/version'

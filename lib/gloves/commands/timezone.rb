@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-#
 require 'gli'
 require 'gloves/timezone'
 require 'gloves/country/version'
