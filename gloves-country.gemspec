@@ -14,7 +14,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Gloves::Country::VERSION
 
-  gem.add_runtime_dependency('config_agent_country')
-  gem.add_runtime_dependency('gloves-core')
-  gem.add_runtime_dependency('gli','2.0.0.rc4')
+  gem.add_dependency('gloves-core')
+  gem.add_dependency('config_agent_country')
 end
