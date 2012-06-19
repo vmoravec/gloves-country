@@ -2,15 +2,16 @@ require 'gloves/cli'
 require 'gloves/keyboard'
 require 'gloves/country/version'
 
-Gloves::Cli.command :keyboard do |c|
-  c.desc "Keyboard configuration for Gloves"
-  c.version Gloves::Country::VERSION
+Gloves::Cli.command :name => :keyboard,
+  :description => "Keyboard command for all" do |c|
+# c.desc "Keyboard configuration for Gloves"
+# c.version Gloves::Country::VERSION
 
-  command :list do |c|
-    c.action do
-      puts 'Do something keyboard related'
-    end
-  end
+# command :list do |c|
+#   c.action do
+#     puts 'Do something keyboard related'
+#   end
+# end
 
   pre do |global,command,options,args|
     # Pre logic here

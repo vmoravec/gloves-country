@@ -1,8 +1,8 @@
-require 'gli'
+require 'gloves/cli'
 require 'gloves/language'
 require 'gloves/country/version'
 
-include GLI::App
+Gloves::Cli.command :name=>:language, :description=>"Language command for all" do |c|
 
 program_desc 'Command line user interface for Language Glove'
 
