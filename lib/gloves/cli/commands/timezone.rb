@@ -71,21 +71,22 @@ Gloves::Cli.command :name=>:timezone, :description=>"Timezone command for all" d
       params["apply"]     = true unless params.empty?
       Gloves::Timezone::modify({}, params)
     end
-end
+  end
 
-pre do |global,command,options,args|
-  # Pre logic here
-  # Return true to proceed; false to abourt and not call the
-  # chosen command
-  # Use skips_pre before a command to skip this block
-  # on that command only
-  true
-end
+  pre do |global,command,options,args|
+    # Pre logic here
+    # Return true to proceed; false to abourt and not call the
+    # chosen command
+    # Use skips_pre before a command to skip this block
+    # on that command only
+    true
+  end
 
-on_error do |exception|
-  # Error logic here
-  # return false to skip default error handling
-  true
-end
+  on_error do |exception|
+    # Error logic here
+    # return false to skip default error handling
+    true
+  end
 
-run(ARGV)
+  run(ARGV)
+end
